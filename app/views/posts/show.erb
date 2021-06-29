@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+
+<% current_user.posts.each do |post|%>
+    
+    <%=post.content%> <%=post.id%>
+    <br>
+    <br>
+
+ <%end%>
+
+
+
+ <a href='/user_page'> GO BACK </a>
+
+
+</html>

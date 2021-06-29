@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<% @post.each do |post|%>
+    
+    <%=post.content%> 
+    <%if post.user_id == current_user.id%>
+    <a href = "/posts/<%=post.id%>/edit">edit</a>
+    <a href = "/posts/<%=post.id%>/delete">delete</a>
+    <%end%>
+    <br>
+    <br>
+
+ <%end%>
+
+
+
+ <a href='/user_page'> GO BACK </a>
+
+
+</html>

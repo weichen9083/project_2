@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<h3>Welcome <%=@user.username%> </h3>
+
+
+
+
+<p>what would you like to do <%=@user.id%></p>
+
+<a href="/post/new">Create Post</a>
+<br>
+<br>
+<a href="/posts/history">ALL POSTS</a>
+<br>
+<br>
+<a href="/posts/<%=current_user.id%>">My POST</a>
+<br>
+<br>
+<a href="/user_page/logout">Log out</a>
+
+</html>

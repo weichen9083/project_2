@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<h3>Login to your account</h3>
+<% if @Wrong %>
+		<p>Omg...........Something went wrong. Try again</p>
+        <p>Account or Password inncorrect</p>
+<% end %>
+
+<form action="/login" method="POST">
+	<p><label for="username">Username:</label><br>
+	<input type="text" id="username" name="username">         
+    <br>
+    <br>
+	<label for="password">Password:</label>
+    <br>
+	<input type="password"  name="password">
+    <br>
+    <br>
+	<input type='submit' value ='SUBMIT'>
+</form>
+<br>
+<br>
+<p><a href="/signup" style="color:blue">create account</a></p>
+<p><a href='/' style="color:red;">return to main page</a></p> 
+
+
+</html>

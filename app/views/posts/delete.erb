@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+
+<h2>are you sure you want to delete the post below?? </h2>
+
+<%=@post.content%> 
+
+<br><br>
+<form action '/posts/:id/delete' method='post'>
+<input type='hidden' name='_method' value='DELETE'>
+<input type='submit' value='DELETE'>
+</form>
+
+<br><br>
+<a href="/user_page">GO BACK</a>
+
+
+
+</html>
